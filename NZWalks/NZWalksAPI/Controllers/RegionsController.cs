@@ -41,8 +41,10 @@ namespace NZWalksAPI.Controllers
             //});
 
             // Uses Mapper
+            // Convert domain regions to DTO regions
             var regionsDTO = mapper.Map<List<Models.DTO.Region>>(regions);
 
+            // Return response
             return Ok(regionsDTO);
         }
 
